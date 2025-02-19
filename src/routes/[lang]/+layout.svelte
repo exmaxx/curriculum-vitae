@@ -1,6 +1,19 @@
 <script lang="ts">
 	import '../../app.css'
+	import i18n from '$lib/i18n'
+
 	const { children } = $props()
+
+	const t = i18n({
+		cs: {
+			here: 'zde',
+			source_code: 'Zdrojový kód',
+		},
+		en: {
+			here: 'here',
+			source_code: 'Source code',
+		},
+	})
 </script>
 
 <div class="bg-zinc-400 print:bg-none">
@@ -8,7 +21,8 @@
 		{@render children()}
 
 		<div class="absolute right-0 bottom-0 mr-1 mb-4 origin-bottom-left translate-full -rotate-90 text-xs text-zinc-400">
-			Zdrojový kód (HTML, CSS, Tailwind 4): <a href="https://github.com/exmaxx/curriculum-vitae">zde</a>
+			{t('source_code')}: <a href="https://github.com/exmaxx/curriculum-vitae">{t('here')}</a>
+			(HTML, CSS, Tailwind 4)
 		</div>
 	</div>
 </div>
