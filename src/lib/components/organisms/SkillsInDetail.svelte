@@ -1,5 +1,5 @@
 <script>
-	import Badge from '$lib/components/Badge.svelte'
+	import Badge from '$lib/components/atoms/Badge.svelte'
 </script>
 
 <section>

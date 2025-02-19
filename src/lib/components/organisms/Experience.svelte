@@ -1,6 +1,6 @@
 <script>
-	import Project from '$lib/components/Project.svelte'
-	import Badge from '$lib/components/Badge.svelte'
+	import Project from '$lib/components/atoms/Project.svelte'
+	import Badge from '$lib/components/atoms/Badge.svelte'
 </script>
 
 <h2 class="mt-0">Praxe</h2>
@@ -79,7 +79,7 @@
 <section>
 	<Project
 		position="Frontend Developer"
-		period="2016-2018"
+		period="2016-2017"
 		title="Esticom (nyní Procore), USA"
 		links={[{ url: 'https://www.esticom.com' }]}
 	>

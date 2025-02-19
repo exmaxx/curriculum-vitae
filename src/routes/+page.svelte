@@ -1,13 +1,13 @@
 <script>
-	import Title from './Title.svelte'
-	import SkillsHighlight from './SkillsHighlight.svelte'
-	import History from './History.svelte'
-	import Experience from './Experience.svelte'
-	import Links from './Links.svelte'
-	import SkillsInDetail from './SkillsInDetail.svelte'
-	import Lead from './Lead.svelte'
-	import Contacts from './Contacts.svelte'
-	import Education from './Education.svelte'
+	import Title from '$lib/components/organisms/Title.svelte'
+	import SkillsHighlight from '$lib/components/organisms/SkillsHighlight.svelte'
+	import History from '$lib/components/organisms/History.svelte'
+	import Experience from '$lib/components/organisms/Experience.svelte'
+	import Links from '$lib/components/organisms/Links.svelte'
+	import SkillsInDetail from '$lib/components/organisms/SkillsInDetail.svelte'
+	import Lead from '$lib/components/organisms/Lead.svelte'
+	import Contacts from '$lib/components/organisms/Contacts.svelte'
+	import Education from '$lib/components/organisms/Education.svelte'
 </script>
 
 <article>

@@ -1,5 +1,5 @@
 <script>
-	import Card from '$lib/components/Card.svelte'
+	import Card from '$lib/components/atoms/Card.svelte'
 </script>
 
 <h2 class="mt-0">Dovednosti</h2>
