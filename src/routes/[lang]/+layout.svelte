@@ -1,12 +1,10 @@
 <script lang="ts">
 	import '../../app.css'
-	let { children } = $props()
+	const { children } = $props()
 </script>
 
 <div class="bg-zinc-400 print:bg-none">
-	<div
-		class=" a4-paper relative mx-auto border border-b-zinc-300 bg-white p-12 text-[11px] print:border-none print:pb-0"
-	>
+	<div class="a4-paper relative mx-auto p-12 text-[11px] print:pb-0">
 		{@render children()}
 
 		<div class="absolute right-0 bottom-0 mr-1 mb-4 origin-bottom-left translate-full -rotate-90 text-xs text-zinc-400">
@@ -19,7 +17,6 @@
 	.a4-paper {
 		width: 210mm;
 		max-width: 210mm;
-		background-image: linear-gradient(white, white calc(100% - 1px), zinc);
-		background-size: auto 297mm;
+		background-image: linear-gradient(white, white calc(297mm - 1px), red calc(297mm - 1px), white calc(297mm));
 	}
 </style>
