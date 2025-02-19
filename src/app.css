@@ -54,6 +54,10 @@
 	a {
 		@apply hover:text-secondary underline underline-offset-2 before:mr-0.5 before:inline-block before:content-['→_'];
 	}
+
+	a[href^="tel"] {
+		@apply before:content-none no-underline
+	}
 }
 
 /* Badge */

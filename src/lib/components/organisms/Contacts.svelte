@@ -15,7 +15,7 @@
 	<h2 class="m-0">{t('contact')}</h2>
 
 	<p class="flex flex-col">
-		<span>+420 777 163 654</span>
+		<a href="tel:+420777163654">+420 777 163 654</a>
 		<a href="mailto:xulicny@gmail.com">xulicny@gmail.com</a>
 	</p>
 </address>
