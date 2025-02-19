@@ -16,6 +16,7 @@ Just install and run.
 # install
 pnpm i
 ```
+
 ```bash
 # run (dev mode)
 pnpm run dev

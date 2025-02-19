@@ -1,7 +1,26 @@
-<h2>Historie</h2>
+<script lang="ts">
+	import i18n from '$lib/i18n'
+
+	const t = i18n({
+		cs: {
+			history: 'Historie',
+			year: 'rok',
+			years: 'let',
+			occasionally: 'nárazově',
+		},
+		en: {
+			history: 'History',
+			year: 'year',
+			years: 'years',
+			occasionally: 'occasionally',
+		},
+	})
+</script>
+
+<h2>{t('history')}</h2>
 <ul>
-	<li>Ruby on Rails (1 rok)</li>
-	<li>iOS + Swift, Android + Java (1 rok)</li>
-	<li>SAP ABAP (7 let)</li>
-	<li>PHP + MySQL (nárazově, hobby web)</li>
+	<li>Ruby on Rails (1 {t('year')})</li>
+	<li>iOS + Swift, Android + Java (1 {t('year')})</li>
+	<li>SAP ABAP (7 {t('years')})</li>
+	<li>PHP + MySQL ({t('occasionally')}, hobby web)</li>
 </ul>

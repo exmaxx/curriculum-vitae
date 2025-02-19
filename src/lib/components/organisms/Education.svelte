@@ -1,7 +1,22 @@
+<script lang="ts">
+	import i18n from '$lib/i18n'
+
+	const t = i18n({
+		cs: {
+			education: 'Vzdělání',
+			muni: 'Masarykova Univerzita, Fakulta informatiky, magisterské',
+		},
+		en: {
+			education: 'Education',
+			muni: "Masaryk University, Faculty of Informatics, Master's",
+		},
+	})
+</script>
+
 <section>
-	<h2>Vzdělání</h2>
+	<h2>{t('education')}</h2>
 
 	<ul>
-		<li>Masarykova Univerzita, Fakulta informatiky, magisterské</li>
+		<li>{t('muni')}</li>
 	</ul>
 </section>

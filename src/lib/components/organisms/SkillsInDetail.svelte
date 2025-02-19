@@ -1,5 +1,39 @@
 <script>
 	import Badge from '$lib/components/atoms/Badge.svelte'
+	import i18n from '$lib/i18n'
+
+	const t = i18n({
+		cs: {
+			brief_encounters: 'Letmá setkání',
+			detail_oriented: 'zaměřený na detaily',
+			honest: 'upřímný, spolehlivý, komunikativní, empatický',
+			interest_1: 'Advent of code, vývoj her (Godot)',
+			interest_2: 'grafy, vizualizace dat',
+			interest_3: 'psychologie',
+			lang_de: 'Německý: pasivně (A1)',
+			lang_en: 'Anglický: plynně (C1)',
+			languages: 'Jazyky',
+			my_attributes: 'Mé vlastnosti',
+			task_completion: 'dotahuji úkoly, aktivně řeším problémy',
+			team_player: 'týmový hráč (pro tým žiju)',
+			work_interests: 'Zájmy spojené s prací',
+		},
+		en: {
+			brief_encounters: 'Brief encounters',
+			detail_oriented: 'detail-oriented',
+			honest: 'honest, reliable, communicative, empathetic',
+			interest_1: 'Advent of code, gamedev (Godot)',
+			interest_2: 'charts, data visualization',
+			interest_3: 'psychology',
+			lang_de: 'German: passive (A1)',
+			lang_en: 'English: fluent (C1)',
+			languages: 'Languages',
+			my_attributes: 'My attributes',
+			task_completion: 'task completion, active problem-solving',
+			team_player: 'team player (living for the team)',
+			work_interests: 'Work-related interests',
+		},
+	})
 </script>
 
 <section>
@@ -25,7 +59,7 @@
 	</div>
 
 	<div class="flex flex-wrap gap-1">
-		<h3 class="w-full">Letmá setkání</h3>
+		<h3 class="w-full">{t('brief_encounters')}</h3>
 
 		<Badge class="border-accent">AlpineJs</Badge>
 		<Badge class="border-accent">Node.js</Badge>
@@ -40,28 +74,28 @@
 		<Badge class="border-accent">CI pipelines</Badge>
 	</div>
 
-	<div class="mt-4 rounded bg-accent p-4">
-		<h3 class="mt-0">Mé vlastnosti</h3>
+	<div class="bg-accent mt-4 rounded p-4">
+		<h3 class="mt-0">{t('my_attributes')}</h3>
 
 		<ul>
-			<li>upřímný, spolehlivý, komunikativní, empatický</li>
-			<li>dotahuji úkoly, aktivně řeším problémy</li>
-			<li>týmový hráč (pro tým žiju)</li>
-			<li>zaměřený na detaily</li>
+			<li>{t('honest')}</li>
+			<li>{t('task_completion')}</li>
+			<li>{t('team_player')}</li>
+			<li>{t('detail_oriented')}</li>
 		</ul>
 
-		<h3>Zájmy spojené s prací</h3>
+		<h3>{t('work_interests')}</h3>
 
 		<ul>
-			<li>Advent of code, vývoj her (Godot)</li>
-			<li>grafy, vizualizace dat</li>
-			<li>psychologie</li>
+			<li>{t('interest_1')}</li>
+			<li>{t('interest_2')}</li>
+			<li>{t('interest_3')}</li>
 		</ul>
 	</div>
 
 	<div>
-		<h3>Jazyky</h3>
-		<div>Anglický: plynně (C1)</div>
-		<div>Německý: pasivně (A1)</div>
+		<h3>{t('languages')}</h3>
+		<div>{t('lang_en')}</div>
+		<div>{t('lang_de')}</div>
 	</div>
 </section>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css'
+	import '../../app.css'
 	let { children } = $props()
 </script>
 
@@ -9,7 +9,7 @@
 	>
 		{@render children()}
 
-		<div class="absolute right-0 bottom-0 mb-4 mr-1 origin-bottom-left translate-full -rotate-90 text-xs text-zinc-400">
+		<div class="absolute right-0 bottom-0 mr-1 mb-4 origin-bottom-left translate-full -rotate-90 text-xs text-zinc-400">
 			Zdrojový kód (HTML, CSS, Tailwind 4): <a href="https://github.com/exmaxx/curriculum-vitae">zde</a>
 		</div>
 	</div>

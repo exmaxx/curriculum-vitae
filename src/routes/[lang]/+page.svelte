@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Title from '$lib/components/organisms/Title.svelte'
 	import SkillsHighlight from '$lib/components/organisms/SkillsHighlight.svelte'
 	import History from '$lib/components/organisms/History.svelte'
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 
-		<div class="border-2 border-dashed border-secondary p-6 rounded">
+		<div class="border-secondary rounded border-2 border-dashed p-6">
 			<SkillsHighlight />
 			<SkillsInDetail />
 		</div>
