@@ -3,4 +3,4 @@ export const Langs = {
 	en: 'en',
 } as const
 
-export type Lang = (typeof Langs)[keyof typeof Langs];
+export type Lang = (typeof Langs)[keyof typeof Langs]

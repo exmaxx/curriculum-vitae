@@ -14,11 +14,11 @@
 	import { DEFAULT_LANG } from '$lib/constants'
 
 	const langs = Object.keys(Langs) as Lang[]
-	const currentLang = $derived((page.params.lang || DEFAULT_LANG)) as Lang
+	const currentLang = $derived(page.params.lang || DEFAULT_LANG) as Lang
 </script>
 
 <article class="p-12">
-	<div class="absolute right-12 text-secondary *:p-1 *:before:content-none">
+	<div class="text-secondary absolute right-12 *:p-1 *:before:content-none">
 		<LangSwitcher {langs} current={currentLang} />
 	</div>
 
