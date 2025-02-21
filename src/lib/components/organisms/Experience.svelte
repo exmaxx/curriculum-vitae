@@ -57,8 +57,8 @@
 		</p>
 
 		<p class="flex flex-wrap gap-1">
-			<Badge class="badge-primary">TS</Badge>
-			<Badge class="badge-primary">Svelte</Badge>
+			<Badge class="badge-large">TS</Badge>
+			<Badge class="badge-large">Svelte</Badge>
 			<Badge>Tailwind</Badge>
 			<Badge>Grid</Badge>
 			<Badge>Vercel</Badge>
@@ -79,10 +79,10 @@
 		</p>
 
 		<p class="flex flex-wrap gap-1">
-			<Badge class="badge-primary">JS</Badge>
-			<Badge class="badge-primary">TS</Badge>
-			<Badge class="badge-primary">Vue 2</Badge>
-			<Badge class="badge-primary">Vue 3</Badge>
+			<Badge class="badge-large">JS</Badge>
+			<Badge class="badge-large">TS</Badge>
+			<Badge class="badge-large">Vue 2</Badge>
+			<Badge class="badge-large">Vue 3</Badge>
 			<Badge>Vuex</Badge>
 			<Badge>Nuxt</Badge>
 			<Badge>GraphQL</Badge>
@@ -101,7 +101,7 @@
 		<p>{t('proj_drmax_react_description')}</p>
 
 		<p class="flex flex-wrap gap-1">
-			<Badge class="badge-primary">React</Badge>
+			<Badge class="badge-large">React</Badge>
 			<Badge>Redux</Badge>
 			<Badge>Flowtype</Badge>
 			<Badge>REST API</Badge>
@@ -123,7 +123,7 @@
 		</p>
 
 		<p class="flex flex-wrap gap-1">
-			<Badge class="badge-primary">React</Badge>
+			<Badge class="badge-large">React</Badge>
 			<Badge>Redux</Badge>
 			<Badge>REST API</Badge>
 			<Badge>web app</Badge>

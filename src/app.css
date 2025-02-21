@@ -47,10 +47,6 @@
 		@apply bg-accent rounded px-2 py-[0.125em] font-medium tracking-wide;
 	}
 
-	em {
-		@apply rounded-sm bg-emerald-200 px-1 py-px not-italic;
-	}
-
 	a {
 		@apply  underline underline-offset-2 before:mr-0.5 before:inline-block before:content-['→_'] hover:cursor-pointer hover:text-amber-600;
 	}
@@ -68,7 +64,7 @@
 	}
 }
 
-@utility badge-primary {
+@utility badge-large {
 	@apply border-secondary bg-zinc-200;
 }
 
