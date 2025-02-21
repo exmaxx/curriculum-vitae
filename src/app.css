@@ -52,11 +52,11 @@
 	}
 
 	a {
-		@apply hover:text-secondary underline underline-offset-2 before:mr-0.5 before:inline-block before:content-['→_'];
+		@apply  underline underline-offset-2 before:mr-0.5 before:inline-block before:content-['→_'] hover:cursor-pointer hover:text-amber-600;
 	}
 
-	a[href^="tel"] {
-		@apply before:content-none no-underline
+	a[href^='tel'] {
+		@apply no-underline before:content-none;
 	}
 }
 
