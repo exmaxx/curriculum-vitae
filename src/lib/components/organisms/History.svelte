@@ -20,7 +20,7 @@
 <h2>{t('history')}</h2>
 <ul>
 	<li>Ruby on Rails (1 {t('year')})</li>
-	<li>iOS + Swift, Android + Java (1 {t('year')})</li>
+	<li>iOS/Swift, Android/Java (1 {t('year')})</li>
 	<li>SAP ABAP (7 {t('years')})</li>
-	<li>PHP + MySQL ({t('occasionally')}, hobby web)</li>
+	<li>PHP + MySQL ({t('occasionally')})</li>
 </ul>

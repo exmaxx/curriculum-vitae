@@ -8,8 +8,8 @@
 
 	const { children, class: classProp, ...attrs }: Props = $props()
 
-	const defaultClasses = 'badge'
+	const defaultClasses = 'sm:badge'
 	const classes = `${defaultClasses} ${classProp}`
 </script>
 
-<span class={classes} {...attrs}>{@render children()}</span>
+<span class="sm:badge" {...attrs}>{@render children()}</span>

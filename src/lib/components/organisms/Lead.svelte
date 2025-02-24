@@ -11,17 +11,17 @@
 		},
 		en: {
 			about_me: 'About me',
-			lead_1: 'I am focused on app development, quality code, problem-solving and team work.',
-			lead_2: 'I work as a professional developer for 17 years, of which',
+			lead_1: 'I focus on app development, writing quality code, problem-solving, and teamwork.',
+			lead_2: ' I have been working as a developer for 17 years, including',
 			lead_3: 'as a',
 			years: 'years',
 		},
 	})
 </script>
 
-<div class="text-md flex-[5]">
+<div class="flex-[5]">
 	<h2>{t('about_me')}</h2>
-	<p class="text-xs leading-5">
+	<p class="zoom-[1.25] mb-0">
 		{t('lead_1')}
 		{t('lead_2')} <strong>8 {t('years')}</strong>
 		{t('lead_3')} <strong>frontend developer</strong>.

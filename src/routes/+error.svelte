@@ -1,4 +1,4 @@
-<div class="flex h-dvh flex-col items-center justify-center">
+<div class="flex h-dvh flex-col items-center justify-center bg-white">
 	<h1>404</h1>
 
 	<p class="flex flex-col items-center sm:block">

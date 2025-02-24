@@ -16,15 +16,15 @@
 	}
 
 	h1 {
-		@apply mb-0 text-3xl;
+		@apply zoom-[2.7] mb-0 leading-[1.2];
 	}
 
 	h2 {
-		@apply mt-4 text-lg;
+		@apply zoom-[1.6] mt-4 leading-[1.4];
 	}
 
 	h3 {
-		@apply mt-5 mb-2 text-sm;
+		@apply zoom-[1.25] mt-5 mb-2 leading-[1.4];
 	}
 
 	ul {
@@ -44,11 +44,11 @@
 	}
 
 	strong {
-		@apply bg-accent rounded px-2 py-[0.125em] font-medium tracking-wide;
+		@apply bg-accent rounded px-2 py-[0.125em] font-normal;
 	}
 
 	a {
-		@apply underline underline-offset-2 before:mr-0.5 before:inline-block before:content-['→_'] hover:cursor-pointer hover:text-amber-600;
+		@apply text-nowrap underline underline-offset-2 before:mr-0.5 before:inline-block before:content-['→_'] hover:cursor-pointer hover:text-amber-600;
 	}
 
 	a[href^='tel'] {
@@ -99,7 +99,19 @@
 /* Zoom */
 
 /* prettier-ignore*/
-@utility font-zoom-* {
+@utility zoom-* {
 	font-size: --value(number)em;
 	font-size: --value([number])em;
+	/*line-height: calc(--value(number) * 1.2)em;*/
+	/*line-height: 1.2em;*/
+	/*line-height: calc(--value([number]) * 1.2em);*/
+}
+
+/* Grid */
+
+@utility grid-areas-main {
+	grid-template-areas:
+		'. top .'
+		'left main .'
+		'. . .';
 }
