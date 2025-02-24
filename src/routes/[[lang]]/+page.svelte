@@ -17,29 +17,29 @@
 	const currentLang = $derived(page.params.lang || DEFAULT_LANG) as Lang
 </script>
 
-<article class="p-12">
-	<div class="text-secondary absolute right-12 *:p-1 *:before:content-none">
+<article class="px-6 py-8 sm:px-12">
+	<div class="text-secondary mb-2 text-right *:p-1 *:before:content-none sm:absolute sm:right-12 print:hidden">
 		<LangSwitcher {langs} current={currentLang} />
 	</div>
 
 	<Title />
 
-	<section class="my-6 flex gap-10">
-		<Lead />
+	<section class="my-5 flex flex-col sm:flex-row-reverse sm:gap-10">
 		<Contacts />
+		<Lead />
 	</section>
 
-	<section class="grid grid-cols-[380px_auto] gap-8">
+	<section class="flex flex-col-reverse gap-8 sm:grid sm:grid-cols-[380px_auto]">
 		<div class="grid grid-cols-[200px_auto] content-start gap-x-4">
 			<section class="col-span-2">
 				<Experience />
 			</section>
 
-			<section>
+			<section class="col-span-2 sm:col-span-1">
 				<History />
 			</section>
 
-			<div>
+			<div class="col-span-2 sm:col-span-1">
 				<Education />
 				<Links />
 			</div>

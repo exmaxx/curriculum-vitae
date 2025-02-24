@@ -1,34 +1,24 @@
 <script lang="ts">
-	import i18n from '$lib/i18n'
+	import SourceCodeNote from './SourceCodeNote.svelte'
+	import PrintNote from './PrintNote.svelte'
 
 	const { children } = $props()
-
-	const t = i18n({
-		cs: {
-			here: 'zde',
-			source_code: 'Zdrojový kód',
-		},
-		en: {
-			here: 'here',
-			source_code: 'Source code',
-		},
-	})
 </script>
 
-<div class="bg-zinc-400 print:bg-none">
-	<div class="a4-paper relative mx-auto bg-white text-[11px] print:pb-0">
+<div
+	class="sm:grid-areas-main min-h-dvh items-center
+	 bg-zinc-400 py-1 sm:grid sm:grid-cols-[1fr_auto_1fr] sm:grid-rows-[1fr_auto_1fr]
+	  print:bg-none"
+>
+	<PrintNote />
+
+	<div
+		class="a4-bottom shadow-2x relative mx-auto bg-white
+		 [grid-area:main] sm:w-[210mm] sm:max-w-[210mm]
+		  print:pb-0 print:shadow-none"
+	>
 		{@render children()}
 
-		<div class="absolute right-0 bottom-0 mr-1 mb-4 origin-bottom-left translate-full -rotate-90 text-xs text-zinc-400">
-			{t('source_code')}: <a href="https://github.com/exmaxx/curriculum-vitae">{t('here')}</a>
-			(HTML, CSS, Tailwind 4)
-		</div>
+		<SourceCodeNote />
 	</div>
 </div>
-
-<style>
-	.a4-paper {
-		width: 210mm;
-		max-width: 210mm;
-	}
-</style>

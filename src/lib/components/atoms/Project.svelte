@@ -14,8 +14,9 @@
 	const trimHttp = (url: string) => url.replace(/^https?:\/\//, '')
 </script>
 
-<h3 class="flex flex-row items-center">
-	<span>{position}</span> <span class="text-secondary grow text-right text-xs/4 whitespace-nowrap">{period}</span>
+<h3 class="flex items-center gap-2">
+	<span>{position}</span>
+	<span class="text-secondary zoom-[0.85] grow text-right whitespace-nowrap sm:self-end">{period}</span>
 </h3>
 
 <div class="ml-1 border-zinc-300 pl-4">

@@ -40,7 +40,7 @@
 </script>
 
 <h2 class="mt-0">{t('title')}</h2>
-<div class="text-secondary text-xs">{t('subtitle')}</div>
+<div class="text-secondary zoom-[1.1]">{t('subtitle')}</div>
 
 <section>
 	<Project
