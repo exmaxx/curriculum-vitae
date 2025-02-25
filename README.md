@@ -2,6 +2,9 @@
 
 My resume.
 
+## Important
+This repo moved to [exmaxx/exmaxx.github.io](https://github.com/exmaxx/exmaxx.github.io).
+
 ## Stack
 
 - Sveltekit
