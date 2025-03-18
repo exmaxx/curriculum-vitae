@@ -24,7 +24,7 @@
 	}
 
 	h3 {
-		@apply zoom-[1.25] mt-5 mb-2 leading-[1.4];
+		@apply zoom-[1.2] mt-4 mb-2 leading-[1.4];
 	}
 
 	ul {
@@ -44,7 +44,8 @@
 	}
 
 	strong {
-		@apply bg-accent rounded px-2 py-[0.125em] font-normal;
+		@apply rounded
+		/*@apply bg-pink-200 rounded px-2 py-[0.125em] font-normal;*/
 	}
 
 	a {
@@ -110,5 +111,5 @@
 	grid-template-areas:
 		'. top .'
 		'left main .'
-		'. . .';
+		'. bottom .';
 }

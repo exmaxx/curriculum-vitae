@@ -2,14 +2,15 @@
 	import type { Snippet } from 'svelte'
 
 	interface Props extends Record<string, unknown> {
+		component?: string
 		class?: string
 		children: Snippet
 	}
 
-	const { children, class: classProp, ...attrs }: Props = $props()
-
-	const defaultClasses = 'badge'
-	const classes = `${defaultClasses} ${classProp}`
+	const { component = 'span', class: classes, children, ...attrs }: Props = $props()
 </script>
 
-<span class={classes} {...attrs}>{@render children()}</span>
+<svelte:element this={component} class={`badge ${classes}`} {...attrs}>
+	{@render children()}
+</svelte:element>
+<!--<span class={`badge ${classes}`} {...attrs}>{@render children()}</span>-->

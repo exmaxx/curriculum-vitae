@@ -1,3 +1,12 @@
-.a4-bottom {
-	background-image: linear-gradient(white, white calc(297mm - 1px), red calc(297mm - 1px), white calc(297mm));
+.with-a4-bottom-gap {
+	--a4-height: 297mm;
+	--visual-gap: 5px;
+
+	background-image: linear-gradient(
+		white,
+		white calc(var(--a4-height) - var(--visual-gap)),
+		var(--color-secondary) calc(var(--a4-height) - var(--visual-gap)),
+		var(--color-secondary) calc(var(--a4-height)),
+		white calc(var(--a4-height))
+	);
 }

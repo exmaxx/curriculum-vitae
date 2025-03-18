@@ -17,14 +17,14 @@
 	const currentLang = $derived(page.params.lang || DEFAULT_LANG) as Lang
 </script>
 
-<article class="px-6 py-8 sm:px-12">
-	<div class="text-secondary mb-2 text-right *:p-1 *:before:content-none sm:absolute sm:right-12 print:hidden">
+<article class="relative px-6 py-8 sm:px-12">
+	<div class="text-secondary zoom-1.5 mb-2 text-right *:p-1 *:before:content-none sm:absolute sm:right-12 print:hidden">
 		<LangSwitcher {langs} current={currentLang} />
 	</div>
 
 	<Title />
 
-	<section class="my-5 flex flex-col sm:flex-row-reverse sm:gap-10">
+	<section class="my-5 flex flex-col sm:flex-row-reverse sm:gap-10 sm:items-start">
 		<Contacts />
 		<Lead />
 	</section>

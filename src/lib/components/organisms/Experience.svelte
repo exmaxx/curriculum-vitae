@@ -56,13 +56,13 @@
 			<a href="https://github.com/exmaxx/cz-income-lib">Github</a>
 		</p>
 
-		<p class="flex flex-wrap gap-1">
-			<Badge class="badge-large">TS</Badge>
-			<Badge class="badge-large">Svelte</Badge>
-			<Badge>Tailwind</Badge>
-			<Badge>Grid</Badge>
-			<Badge>Vercel</Badge>
-			<Badge>{t('npm_lib')}</Badge>
+		<p class="flex list-none flex-wrap gap-1 pl-0">
+			<Badge component="li" class="badge-large">Svelte</Badge>
+			<Badge component="li" class="badge-large">TS</Badge>
+			<Badge component="li">Tailwind</Badge>
+			<Badge component="li">Grid</Badge>
+			<Badge component="li">Vercel</Badge>
+			<Badge component="li">{t('npm_lib')}</Badge>
 		</p>
 	</Project>
 </section>
@@ -78,36 +78,41 @@
 			{t('proj_drmax_description')}
 		</p>
 
-		<p class="flex flex-wrap gap-1">
-			<Badge class="badge-large">JS</Badge>
-			<Badge class="badge-large">TS</Badge>
-			<Badge class="badge-large">Vue 2</Badge>
-			<Badge class="badge-large">Vue 3</Badge>
-			<Badge>Vuex</Badge>
-			<Badge>Nuxt</Badge>
-			<Badge>GraphQL</Badge>
-			<Badge>Web Vitals</Badge>
-			<Badge>Azure DevOps</Badge>
-			<Badge>refactoring</Badge>
-			<Badge>code reviews</Badge>
-			<Badge>scrum</Badge>
-			<Badge>e-eshop</Badge>
-		</p>
+		<ul class="flex list-none flex-wrap gap-1 pl-0">
+			<Badge component="li" class="badge-large">Vue 2</Badge>
+			<Badge component="li" class="badge-large">Vue 3</Badge>
+			<Badge component="li" class="badge-large">JS</Badge>
+			<Badge component="li" class="badge-large">TS</Badge>
+			<Badge component="li">Vuex</Badge>
+			<Badge component="li">Nuxt</Badge>
+			<Badge component="li">GraphQL</Badge>
+			<Badge component="li">Web Vitals</Badge>
+			<Badge component="li">Azure DevOps</Badge>
+			<Badge component="li">refactoring</Badge>
+			<Badge component="li">code reviews</Badge>
+			<Badge component="li">scrum</Badge>
+			<Badge component="li">e-eshop</Badge>
+		</ul>
 	</Project>
 </section>
 
 <section>
-	<Project position="Senior Frontend Developer & Team Leader" period="2018-2019" title="Dr. Max - checkout app">
+	<Project
+		position="Senior Frontend Developer & Team Leader"
+		period="2018-2019"
+		title="Dr. Max - checkout app"
+		links={[{ url: 'https://www.drmax.cz' }]}
+	>
 		<p>{t('proj_drmax_react_description')}</p>
 
-		<p class="flex flex-wrap gap-1">
-			<Badge class="badge-large">React</Badge>
-			<Badge>Redux</Badge>
-			<Badge>Flowtype</Badge>
-			<Badge>REST API</Badge>
-			<Badge>{t('leadership')}</Badge>
-			<Badge>e-eshop</Badge>
-		</p>
+		<ul class="flex list-none flex-wrap gap-1 pl-0">
+			<Badge component="li" class="badge-large">React</Badge>
+			<Badge component="li">Redux</Badge>
+			<Badge component="li">Flowtype</Badge>
+			<Badge component="li">REST API</Badge>
+			<Badge component="li">{t('leadership')}</Badge>
+			<Badge component="li">e-eshop</Badge>
+		</ul>
 	</Project>
 </section>
 
@@ -122,11 +127,11 @@
 			{t('proj_esticom_description')}
 		</p>
 
-		<p class="flex flex-wrap gap-1">
-			<Badge class="badge-large">React</Badge>
-			<Badge>Redux</Badge>
-			<Badge>REST API</Badge>
-			<Badge>web app</Badge>
-		</p>
+		<ul class="flex list-none flex-wrap gap-1 pl-0">
+			<Badge component="li" class="badge-large">React</Badge>
+			<Badge component="li">Redux</Badge>
+			<Badge component="li">REST API</Badge>
+			<Badge component="li">web app</Badge>
+		</ul>
 	</Project>
 </section>
