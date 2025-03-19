@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/state'
-	import i18n from '$lib/i18n'
-	import { Langs } from '$lib/langs'
-	import LeadEn from '$lib/components/translations/LeadEn.svelte'
-	import LeadCs from '$lib/components/translations/LeadCs.svelte'
-	import { DEFAULT_LANG } from '$lib/constants'
+	import i18n from '$lib/i18n.js'
+	import { Langs } from '$lib/langs.js'
+	import LeadEn from './translations/LeadEn.svelte'
+	import LeadCs from './translations/LeadCs.svelte'
+	import { DEFAULT_LANG } from '$lib/constants.js'
 
 	const lang = $derived(page.params.lang || DEFAULT_LANG)
 
@@ -21,9 +21,8 @@
 	})
 </script>
 
-<div class="flex-[5]">
-	<h2>{t('summary')}</h2>
-	<p class="zoom-[1.25] mb-0">
+<div>
+	<p>
 		{#if lang === Langs.cs}
 			<LeadCs />
 		{:else}

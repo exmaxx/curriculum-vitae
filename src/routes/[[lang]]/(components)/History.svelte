@@ -17,10 +17,12 @@
 	})
 </script>
 
-<h2>{t('history')}</h2>
-<ul>
-	<li>Ruby on Rails (1 {t('year')})</li>
-	<li>iOS/Swift, Android/Java (1 {t('year')})</li>
-	<li>SAP ABAP (7 {t('years')})</li>
-	<li>PHP + MySQL ({t('occasionally')})</li>
-</ul>
+<section>
+	<h3 class="mt-0">{t('history')}</h3>
+
+	<ul>
+		<li>Ruby on Rails (1 {t('year')})</li>
+		<li>iOS/Swift, Android/Java (1 {t('year')})</li>
+		<li>PHP + MySQL ({t('occasionally')})</li>
+	</ul>
+</section>

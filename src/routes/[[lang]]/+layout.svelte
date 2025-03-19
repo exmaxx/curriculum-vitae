@@ -1,6 +1,6 @@
 <script lang="ts">
-	import SourceCodeNote from './SourceCodeNote.svelte'
-	import PrintNote from './PrintNote.svelte'
+	import SourceCodeNote from './(components)/SourceCodeNote.svelte'
+	import PrintNote from './(components)/PrintNote.svelte'
 
 	const { children } = $props()
 </script>

@@ -14,7 +14,7 @@
 </script>
 
 <section>
-	<h2>{t('education')}</h2>
+	<h3 class="mt-0">{t('education')}</h3>
 
 	<ul>
 		<li>{t('muni')}</li>
