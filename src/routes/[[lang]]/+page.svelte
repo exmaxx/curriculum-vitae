@@ -1,46 +1,56 @@
 <script lang="ts">
-	import i18n from '$lib/i18n'
+	import useI18n from '$lib/composables/useI18n.svelte.js'
 	import Title from './(components)/Title.svelte'
 	import SkillsHighlight from './(components)/SkillsHighlight.svelte'
-	import Experience from './(components)/Experience.svelte'
+	import ExperienceWork from './(components)/ExperienceWork.svelte'
 	import SkillsTech from './(components)/SkillsTech.svelte'
 	import Lead from './(components)/Lead.svelte'
 	import Contacts from './(components)/Contacts.svelte'
-	import LangSwitcher from '$lib/components/organisms/LangSwitcher.svelte'
 	import Education from './(components)/Education.svelte'
 	import Profiles from './(components)/Profiles.svelte'
 	import Languages from './(components)/Languages.svelte'
 	import Personality from './(components)/Personality.svelte'
 	import Interests from './(components)/Interests.svelte'
+	import ExperienceProjects from './(components)/ExperienceProjects.svelte'
 
-	const t = i18n({
+	const t = useI18n({
 		cs: {
 			learning: 'učím se',
 			skills: 'Dovednosti',
+			summary: 'Profil',
 			years: 'roky',
+			experience_subtitle: 'Výběr',
+			experience_work_title: 'Praxe',
+			experience_projects_title: 'Projekty',
+			who_am_i: 'Kdo jsem',
 		},
 		en: {
 			learning: 'learning',
 			skills: 'Skills',
+			summary: 'Summary',
 			years: 'years',
+			experience_subtitle: 'Selection',
+			experience_work_title: 'Experience',
+			experience_projects_title: 'Projects',
+			who_am_i: 'Who am I',
 		},
 	})
 </script>
 
-<article class="relative px-6 py-8 sm:px-12">
-	<div class="text-secondary zoom-1.5 mb-2 text-right *:p-1 *:before:content-none sm:absolute sm:right-12 print:hidden">
-		<LangSwitcher />
-	</div>
+<article class="a4:px-11 px-6 py-8 print:shadow-none">
+	<section class="a4:flex-row flex flex-col">
+		<div class="ml-2 grow">
+			<Title />
+		</div>
 
-	<Title />
-
-	<section class="flex gap-4 not-italic">
-		<Contacts />
+		<div>
+			<Contacts />
+		</div>
 	</section>
 
-	<section class="mt-8 flex flex-col-reverse gap-10 sm:grid sm:grid-cols-[auto_360px]">
-		<div class="border-secondary flex flex-col gap-3 rounded-xl bg-gray-100 px-4 pb-4">
-			<h2>Summary</h2>
+	<section class="a4:grid a4:grid-cols-[auto_375px] mt-6 flex flex-col gap-8">
+		<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
+			<h2>{t('summary')}</h2>
 
 			<Lead />
 
@@ -49,21 +59,23 @@
 			<SkillsHighlight />
 			<SkillsTech />
 
-			<h2 class="mt-1">Who I am</h2>
+			<h2 class="mt-1">{t('who_am_i')}</h2>
 
 			<Personality />
 			<Interests />
 			<Languages />
 			<Education />
 			<Profiles />
-		</div>
+		</section>
 
-		<div>
+		<section>
+			<h2 class="mt-1 bg-zinc-100">{t('experience_work_title')}</h2>
 
-			<h2 class="mt-1">Experience</h2>
-			<div class="text-secondary zoom-[1.1]">Selection</div>
+			<ExperienceWork />
 
-			<Experience />
-		</div>
+			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title')}</h2>
+
+			<ExperienceProjects />
+		</section>
 	</section>
 </article>

@@ -17,12 +17,12 @@
 
 <h3 class="flex items-center gap-2">
 	<span>{position}</span>
-	<span class="text-secondary zoom-[0.85] grow text-right whitespace-nowrap sm:self-end">{period}</span>
+	<span class="text-secondary zoom-[0.85] a4:self-end grow text-right whitespace-nowrap">{period}</span>
 </h3>
 
 <div class="border-zinc-300">
 	<div class:mb-1={!!links}>
-		<p class="text-secondary pt-0 font-semibold mt-0">
+		<p class="text-secondary mt-0 pt-0 font-semibold">
 			{title}
 
 			<!-- TODO: Move links to last line? -->

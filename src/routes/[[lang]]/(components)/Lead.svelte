@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state'
-	import i18n from '$lib/i18n.js'
+	import useI18n from '$lib/composables/useI18n.svelte.js'
 	import { Langs } from '$lib/langs.js'
 	import LeadEn from './translations/LeadEn.svelte'
 	import LeadCs from './translations/LeadCs.svelte'
@@ -8,7 +8,7 @@
 
 	const lang = $derived(page.params.lang || DEFAULT_LANG)
 
-	const t = i18n({
+	const t = useI18n({
 		cs: {
 			summary: 'Souhrn',
 			lead: 'Zaměřuji se na rozvoj aplikací, kvalitní kód, řešení problémů a týmovou práci.',

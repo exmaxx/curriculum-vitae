@@ -1,7 +1,7 @@
 <script lang="ts">
-	import i18n from '$lib/i18n'
+	import useI18n from '$lib/composables/useI18n.svelte.js'
 
-	const t = i18n({
+	const t = useI18n({
 		cs: {
 			interest_1: 'Advent of code, vývoj her (Godot)',
 			interest_2: 'grafy, vizualizace dat',
