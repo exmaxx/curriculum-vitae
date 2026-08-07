@@ -1,7 +1,7 @@
 <script lang="ts">
-	import i18n from '$lib/i18n'
+	import useI18n from '$lib/composables/useI18n.svelte.js'
 
-	const t = i18n({
+	const t = useI18n({
 		cs: {
 			learning: 'učím se',
 			skills: 'Dovednosti',
@@ -23,7 +23,7 @@
 			</picture>
 
 			<span class="text-[1.2em]">
-				<strong>Vue</strong>: 4 {t('years')}
+				<strong>Vue 2 & 3</strong>: 4 {t('years')}
 			</span>
 		</li>
 
@@ -33,7 +33,7 @@
 			</picture>
 
 			<span class="text-[1.2em]">
-				<strong>React</strong>: 3 {t('years')}
+				<strong>React 15 – 18</strong>: 3 {t('years')}
 			</span>
 		</li>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import i18n from '$lib/i18n'
+	import useI18n from '$lib/composables/useI18n.svelte.js'
 
 	interface Props {
 		class?: string
@@ -7,7 +7,7 @@
 
 	const { class: classes }: Props = $props()
 
-	const t = i18n({
+	const t = useI18n({
 		cs: {
 			print: 'Tisk',
 			print_info: 'Klikněte a vytiskněte ve formátu A4',
@@ -22,7 +22,7 @@
 </script>
 
 <div
-	class={`text-accent zoom-2 flex flex-col items-center sm:zoom-[3] sm:my-3 sm:gap-1 2xl:mr-10 2xl:flex-row 2xl:gap-6
+	class={`text-accent zoom-2 a4:zoom-[3] a4:my-3 a4:gap-1 flex flex-col items-center 2xl:mr-10 2xl:flex-row 2xl:gap-6
  		${classes}`}
 >
 	<div class="flex flex-col items-center text-nowrap">
