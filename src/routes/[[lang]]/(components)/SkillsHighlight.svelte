@@ -3,12 +3,10 @@
 
 	const t = useI18n({
 		cs: {
-			learning: 'učím se',
 			skills: 'Dovednosti',
 			years: 'roky',
 		},
 		en: {
-			learning: 'learning',
 			skills: 'Skills',
 			years: 'years',
 		},
@@ -23,7 +21,7 @@
 			</picture>
 
 			<span class="text-[1.2em]">
-				<strong>Vue 2 & 3</strong>: 4 {t('years')}
+				<strong>Vue</strong>: 5 {t('years')}
 			</span>
 		</li>
 
@@ -33,17 +31,7 @@
 			</picture>
 
 			<span class="text-[1.2em]">
-				<strong>React 15 – 18</strong>: 3 {t('years')}
-			</span>
-		</li>
-
-		<li class="flex items-center gap-2 text-nowrap">
-			<picture class="w-4.5">
-				<img src="svelte-logo.svg" alt="svelte-logo" />
-			</picture>
-
-			<span class="text-[1.2em]">
-				<strong>Svelte</strong>: {t('learning')}
+				<strong>React</strong>: 4 {t('years')}
 			</span>
 		</li>
 
@@ -53,7 +41,7 @@
 			</picture>
 
 			<span class="text-[1.2em]">
-				<strong>TypeScript</strong>: 3 {t('years')}
+				<strong>TypeScript</strong>: 4 {t('years')}
 			</span>
 		</li>
 	</ul>
