@@ -4,11 +4,11 @@
 	const t = useI18n({
 		cs: {
 			deep_code_reviews: 'hloubkové code reviews',
-			also_used: 'Přesah do full-stacku',
+			sap: 'SAP',
 		},
 		en: {
 			deep_code_reviews: 'deep code reviews',
-			also_used: 'Full-stack exposure',
+			sap: 'SAP',
 		},
 	})
 </script>
@@ -23,15 +23,13 @@
 		<li class="badge">{t('deep_code_reviews')}</li>
 	</ul>
 
-	<h3>{t('also_used')}</h3>
+	<h3>{t('sap')}</h3>
 
 	<ul class="flex list-none flex-wrap gap-1 pl-0">
-		<li class="badge">Supabase</li>
-		<li class="badge">Node.js</li>
-		<li class="badge">Ruby on Rails</li>
-		<li class="badge">REST API</li>
-		<li class="badge">GraphQL</li>
-		<li class="badge">Postman</li>
-		<li class="badge">MySQL</li>
+		<li class="badge">ABAP</li>
+		<li class="badge">ABAP Objects</li>
+		<li class="badge">SAP SD</li>
+		<li class="badge">SAP MM</li>
+		<li class="badge">SAP Workflow</li>
 	</ul>
 </section>

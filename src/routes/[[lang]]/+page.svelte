@@ -4,7 +4,6 @@
 	import SkillsHighlight from './(components)/SkillsHighlight.svelte'
 	import ExperienceWork from './(components)/ExperienceWork.svelte'
 	import ExperienceWorkOther from './(components)/ExperienceWorkOther.svelte'
-	import ExperienceProjects from './(components)/ExperienceProjects.svelte'
 	import ExperienceProjectsOther from './(components)/ExperienceProjectsOther.svelte'
 	import SkillsTech from './(components)/SkillsTech.svelte'
 	import Lead from './(components)/Lead.svelte'
@@ -80,10 +79,6 @@
 			<h2 class="mt-1 bg-zinc-100">{t('experience_work_title_selection')}</h2>
 
 			<ExperienceWork />
-
-			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title')}</h2>
-
-			<ExperienceProjects />
 		</section>
 	</PaperPage>
 

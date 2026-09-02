@@ -4,11 +4,11 @@
 	const t = useI18n({
 		cs: {
 			education: 'Vzdělání',
-			muni: 'Masarykova Univerzita, Fakulta informatiky, magisterské',
+			muni: 'Masarykova univerzita (Brno, Česká republika), Fakulta informatiky, magisterské',
 		},
 		en: {
 			education: 'Education',
-			muni: "Masaryk University, Faculty of Informatics, Master's",
+			muni: "Masaryk University (Brno, Czech Republic), Faculty of Informatics, Master's",
 		},
 	})
 </script>
