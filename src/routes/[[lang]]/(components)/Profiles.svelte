@@ -16,6 +16,6 @@
 
 	<ul class="flex list-none gap-2 text-nowrap">
 		<li><a href="https://stackoverflow.com/users/2016383/exmaxx">StackOverflow</a></li>
-		<li><a href="https://github.com/exmaxx">Github</a></li>
+		<li><a href="https://github.com/exmaxx">GitHub</a></li>
 	</ul>
 </section>

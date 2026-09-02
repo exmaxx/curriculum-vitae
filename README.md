@@ -9,7 +9,7 @@ Visit online version on [exmaxx.github.io](https://exmaxx.github.io).
 ## Stack
 
 - Sveltekit
-- Typescript
+- TypeScript
 - HTML + CSS + Tailwind 4
 
 ## How to run it

@@ -6,15 +6,15 @@
 			detail_oriented: 'zaměřený na detaily',
 			honest: 'upřímný, spolehlivý, komunikativní, empatický',
 			my_attributes: 'Osobnost',
-			work_attitude: 'aktivně řeším problémy',
-			team_player: 'týmový hráč (pro tým žiju)',
+			work_attitude: 'Aktivně řeším problémy',
+			team_player: 'týmový hráč',
 		},
 		en: {
 			detail_oriented: 'Detail-oriented',
 			honest: 'Honest, reliable, communicative, empathetic',
 			my_attributes: 'Personality',
-			work_attitude: 'Active problem-solver',
-			team_player: 'Team player (living for the team)',
+			work_attitude: 'Proactive problem solver',
+			team_player: 'Team player',
 		},
 	})
 </script>
@@ -24,8 +24,8 @@
 
 	<ul>
 		<li>{t('honest')}</li>
+		<li>{t('detail_oriented')}</li>
 		<li>{t('work_attitude')}</li>
 		<li>{t('team_player')}</li>
-		<li>{t('detail_oriented')}</li>
 	</ul>
 </section>

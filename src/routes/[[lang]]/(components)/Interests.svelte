@@ -3,15 +3,15 @@
 
 	const t = useI18n({
 		cs: {
-			interest_1: 'Advent of code, vývoj her (Godot)',
+			interest_1: 'UX, AI-nástroje',
 			interest_2: 'grafy, vizualizace dat',
-			interest_3: 'UX',
+			interest_3: 'Advent of Code, Godot (vývoj her)',
 			work_interests: 'Zájmy spojené s prací',
 		},
 		en: {
-			interest_1: 'Advent of code, gamedev (Godot)',
+			interest_1: 'UX, AI-powered tools',
 			interest_2: 'Charts, data visualization',
-			interest_3: 'UX',
+			interest_3: 'Advent of Code, Godot (gamedev)',
 			work_interests: 'Work-related interests',
 		},
 	})
