@@ -18,7 +18,7 @@
 
 <h3 class="flex items-center gap-2">
 	<span class="grow">{position}</span>
-	<span class="text-secondary zoom-[0.85] text-right whitespace-nowrap">{period}</span>
+	<span class="text-secondary text-right text-[0.85em] whitespace-nowrap">{period}</span>
 </h3>
 
 <div class="border-zinc-300">
@@ -28,7 +28,7 @@
 				<span class="grow">{title}</span>
 
 				{#if badges?.length}
-					<span class="zoom-[0.85] inline-flex shrink-0 gap-1 whitespace-nowrap">
+					<span class="inline-flex shrink-0 gap-1 text-[0.85em] whitespace-nowrap">
 						{#each badges as badge}
 							<span class="badge-meta font-normal">{badge}</span>
 						{/each}

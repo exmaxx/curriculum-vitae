@@ -13,5 +13,5 @@
 
 <div>
 	<h1>Marek {t('surname')}</h1>
-	<p class="zoom-[1.8] a4:-mt-1 mt-2 leading-9">Senior Software Engineer</p>
+	<p class="a4:-mt-1 mt-2 text-[1.8em] leading-9">Senior Software Engineer</p>
 </div>

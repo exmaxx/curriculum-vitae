@@ -24,15 +24,18 @@
 	  print:bg-white"
 >
 	<div
-		class="not-print:with-a4-bottom-gap not-print:mt-12 a4:w-[210mm] a4:max-w-[210mm] relative
-		 mx-auto bg-white shadow-2xl [grid-area:main]
-		  print:pb-0 print:shadow-none"
+		class="[grid-area:main] mx-auto w-fit origin-top not-print:mt-12 xl:scale-150
+		 print:scale-100"
 	>
-		<div class="zoom-1.5 a4:-top-8 absolute -top-11 right-2 mb-2 *:p-1 *:before:content-none print:hidden">
+		<div
+			class="not-print:with-a4-bottom-gap a4:w-[210mm] a4:max-w-[210mm] relative
+			 bg-white shadow-2xl print:pb-0 print:shadow-none"
+		>
+		<div class="a4:-top-8 absolute -top-11 right-2 mb-2 text-[1.5em] *:p-1 *:before:content-none print:hidden">
 			<LangSwitcher />
 		</div>
 
 		{@render children()}
+		</div>
 	</div>
-
 </div>
