@@ -9,7 +9,7 @@
 			proj_morosystems_details_2: 'AI-asistovaný vývoj k urychlení migrace',
 
 			proj_drmax_react_description: 'Samostatná Checkout aplikace, lékárenský e-shop.',
-			proj_drmax_react_details_1: 'Vedl jsem tým 2 vývojářů',
+			proj_drmax_react_details_1: 'Vedl jsem tým 2 inženýrů',
 			proj_drmax_react_details_2: 'Navrhl architekturu & doručil kompletní řešení',
 			proj_drmax_react_details_3: 'Zajistil kvalitu kódu pomocí typování a unit testů',
 
@@ -29,12 +29,15 @@
 			proj_gap_link_2: 'zdroj',
 			proj_gap_title: 'Sebevzdělávání, osobní projekty',
 
-			proj_rascasone_description: 'Malá mezinárodní vývojářská agentura.',
-			proj_rascasone_details_1: 'Vedl týmy 1–3 lidí',
-			proj_rascasone_details_2: 'Komunikace s klienty a plánování projektů',
-			proj_rascasone_details_3:
-				'Full-stack v Ruby on Rails (1 rok) — webová aplikace pro pojišťovacího makléře, vylepšení aplikace bezpečnostní agentury',
-			proj_rascasone_details_4: 'Několik frontendů v Reactu',
+			proj_mann_hummel_description:
+				'ABAP vývojář a specialista na SAP Workflow. Člen týmu IT podpory pro české a německé výrobní závody.',
+			proj_mann_hummel_details_1: 'Vývoj a údržba ABAP aplikací pro interní oddělení',
+			proj_mann_hummel_details_2: 'Implementace a podpora SAP Workflow',
+
+			proj_scheer_description:
+				'SAP vývojář pro klienty IDS Scheer. Vedoucí malého týmu, hlavní kontakt pro ABAP témata.',
+			proj_scheer_details_1: 'Vývoj custom ABAP řešení pro moduly SD, MM a FI',
+			proj_scheer_details_2: 'Workflow, ALV reporty, SmartForms, batch input',
 
 			source_app: 'Zdroj stránky',
 			source_lib: 'Zdroj knihovny',
@@ -45,7 +48,7 @@
 			proj_morosystems_details_2: 'AI-assisted development to speed up migration',
 
 			proj_drmax_react_description: 'Built standalone Checkout web app for the online pharmacy.',
-			proj_drmax_react_details_1: 'Led a team of 2 developers',
+			proj_drmax_react_details_1: 'Led a team of 2 engineers',
 			proj_drmax_react_details_2: 'Made key architecture decisions & delivered a complete solution',
 			proj_drmax_react_details_3: 'Enhanced code quality through type safety and unit tests',
 
@@ -65,12 +68,14 @@
 			proj_gap_link_2: 'source',
 			proj_gap_position: 'Personal project',
 
-			proj_rascasone_description: 'Co-owned and led a small international development agency.',
-			proj_rascasone_details_1: 'Led teams of 1–3',
-			proj_rascasone_details_2: 'Client communication and project planning',
-			proj_rascasone_details_3:
-				'Full-stack Ruby on Rails (1 year) — web app for an insurance broker, enhancements to a security agency app',
-			proj_rascasone_details_4: 'Several frontends in React (including Esticom and Dr. Max)',
+			proj_mann_hummel_description:
+				'ABAP developer and SAP Workflow specialist. IT support team member for Czech and German manufacturing plants.',
+			proj_mann_hummel_details_1: 'Developed and maintained ABAP applications for internal departments',
+			proj_mann_hummel_details_2: 'Implemented and supported SAP Workflow solutions',
+
+			proj_scheer_description: 'SAP developer for IDS Scheer clients. Led a small team, go-to person for ABAP topics.',
+			proj_scheer_details_1: 'Custom ABAP development for SD, MM, and FI modules',
+			proj_scheer_details_2: 'Workflow, ALV reports, SmartForms, batch input',
 
 			source_app: 'App source',
 			source_lib: 'Library source',
@@ -155,7 +160,7 @@
 
 <section>
 	<Project
-		position="Senior Frontend Engineer & Team Leader"
+		position="Senior Frontend Engineer / Team Leader"
 		period="2018-2019"
 		title="Dr. Max, Czech Republic"
 		badges={['Remote']}
@@ -185,33 +190,57 @@
 </section>
 
 <section>
-	<Project
-		position="Full-stack Developer / Team Leader / Co-owner"
-		period="2015-2019"
-		title="Rascasone, Czech Republic"
-		badges={['Hybrid']}
-		links={[{ url: 'https://www.rascasone.com' }]}
-	>
+	<Project position="ABAP Developer" period="2010-2013" title="Mann + Hummel, Czech Republic" badges={['On-site']}>
 		<p>
-			<em>{t('proj_rascasone_description')}</em>
+			<em>{t('proj_mann_hummel_description')}</em>
 		</p>
 
 		<ul>
-			<li>{t('proj_rascasone_details_1')}</li>
-			<li>{t('proj_rascasone_details_2')}</li>
-			<li>{t('proj_rascasone_details_3')}</li>
-			<li>{t('proj_rascasone_details_4')}</li>
+			<li>{t('proj_mann_hummel_details_1')}</li>
+			<li>{t('proj_mann_hummel_details_2')}</li>
 		</ul>
 
 		<div class="mt-2 ml-5">
 			Tech:
 
 			<ul class="inline list-none pl-0 leading-5">
-				<li class="badge badge-highlight inline">Ruby on Rails</li>
-				<li class="badge badge-highlight inline">Ruby</li>
-				<li class="badge inline">REST API</li>
-				<li class="badge inline">JavaScript</li>
-				<li class="badge inline">React</li>
+				<li class="badge badge-highlight inline">ABAP</li>
+				<li class="badge inline">ABAP Objects</li>
+				<li class="badge inline">SAP Workflow</li>
+				<li class="badge inline">SAP SD</li>
+				<li class="badge inline">SAP MM</li>
+				<li class="badge inline">Web Dynpro</li>
+				<li class="badge inline">eCATT</li>
+			</ul>
+		</div>
+	</Project>
+</section>
+
+<section>
+	<Project
+		position="ABAP Developer / Team Leader"
+		period="2007-2010"
+		title="IDS Scheer, Czech Republic"
+		badges={['On-site']}
+	>
+		<p>
+			<em>{t('proj_scheer_description')}</em>
+		</p>
+
+		<ul>
+			<li>{t('proj_scheer_details_1')}</li>
+			<li>{t('proj_scheer_details_2')}</li>
+		</ul>
+
+		<div class="mt-2 ml-5">
+			Tech:
+
+			<ul class="inline list-none pl-0 leading-5">
+				<li class="badge badge-highlight inline">ABAP</li>
+				<li class="badge inline">SAP Workflow</li>
+				<li class="badge inline">SAP SD</li>
+				<li class="badge inline">SAP MM</li>
+				<li class="badge inline">ALV</li>
 			</ul>
 		</div>
 	</Project>

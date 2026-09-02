@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>Marek Ulicny - CV ({t('language')})</title>
+	<title>Marek Ulicny - Senior Software Engineer ({t('language')})</title>
 </svelte:head>
 
 <div

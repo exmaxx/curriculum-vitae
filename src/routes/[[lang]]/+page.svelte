@@ -4,7 +4,6 @@
 	import SkillsHighlight from './(components)/SkillsHighlight.svelte'
 	import ExperienceWork from './(components)/ExperienceWork.svelte'
 	import ExperienceWorkOther from './(components)/ExperienceWorkOther.svelte'
-	import ExperienceProjects from './(components)/ExperienceProjects.svelte'
 	import ExperienceProjectsOther from './(components)/ExperienceProjectsOther.svelte'
 	import SkillsTech from './(components)/SkillsTech.svelte'
 	import Lead from './(components)/Lead.svelte'
@@ -25,7 +24,6 @@
 			experience_work_title_selection: 'Praxe (Výběr)',
 			experience_work_title_other: 'Praxe (Další)',
 			experience_projects_title: 'Osobní projekty',
-			experience_projects_title_other: 'Osobní projekty (Další)',
 			who_am_i: 'Kdo jsem',
 		},
 		en: {
@@ -36,7 +34,6 @@
 			experience_work_title_selection: 'Work Experience (Highlight)',
 			experience_work_title_other: 'Work Experience (Additional)',
 			experience_projects_title: 'Personal Projects',
-			experience_projects_title_other: 'Personal Projects (Additional)',
 			who_am_i: 'Who I am',
 		},
 	})
@@ -57,33 +54,35 @@
 	<!-- Page #1 -->
 
 	<PaperPage class="a4:grid a4:grid-cols-[auto_380px]">
-		<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
-			<h2>{t('summary')}</h2>
+		<div class="flex flex-col gap-4">
+			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
+				<h2>{t('summary')}</h2>
 
-			<Lead />
+				<Lead />
+			</section>
 
-			<h2 class="mt-1">{t('skills')}</h2>
+			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
+				<h2>{t('skills')}</h2>
 
-			<SkillsHighlight />
-			<SkillsTech />
+				<SkillsHighlight />
+				<SkillsTech />
+			</section>
 
-			<h2 class="mt-1">{t('who_am_i')}</h2>
+			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
+				<h2>{t('who_am_i')}</h2>
 
-			<Personality />
-			<Interests />
-			<Languages />
-			<Education />
-			<Profiles />
-		</section>
+				<Personality />
+				<Interests />
+				<Languages />
+				<Education />
+				<Profiles />
+			</section>
+		</div>
 
 		<section>
 			<h2 class="mt-1 bg-zinc-100">{t('experience_work_title_selection')}</h2>
 
 			<ExperienceWork />
-
-			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title')}</h2>
-
-			<ExperienceProjects />
 		</section>
 	</PaperPage>
 
@@ -95,7 +94,7 @@
 
 			<ExperienceWorkOther />
 
-			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title_other')}</h2>
+			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title')}</h2>
 
 			<ExperienceProjectsOther />
 		</section>

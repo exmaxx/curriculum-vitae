@@ -7,14 +7,12 @@
 			honest: 'upřímný, spolehlivý, komunikativní, empatický',
 			my_attributes: 'Osobnost',
 			work_attitude: 'Aktivně řeším problémy',
-			team_player: 'týmový hráč',
 		},
 		en: {
 			detail_oriented: 'Detail-oriented',
 			honest: 'Honest, reliable, communicative, empathetic',
 			my_attributes: 'Personality',
 			work_attitude: 'Proactive problem solver',
-			team_player: 'Team player',
 		},
 	})
 </script>
@@ -26,6 +24,5 @@
 		<li>{t('honest')}</li>
 		<li>{t('detail_oriented')}</li>
 		<li>{t('work_attitude')}</li>
-		<li>{t('team_player')}</li>
 	</ul>
 </section>
