@@ -14,12 +14,6 @@
 			proj_calculator_link_1: 'web',
 			proj_calculator_link_2: 'zdroj',
 			proj_calculator_position: 'Kalkulačka a srovnávač platů',
-
-			proj_explorer_description: 'Knihovna pro Ruby, která zobrazuje runtime data a jejich vazby jako obrázek.',
-			proj_explorer_details_1: 'Usnadňuje debugging v Ruby on Rails (výstup do konzole i GraphViz obrázek),',
-			proj_explorer_link_1: 'zdroj',
-			proj_explorer_position: 'Active Explorer Gem',
-			proj_explorer_title: 'Open source',
 		},
 		en: {
 			proj_finance_position: 'Personal Finance Tracking App',
@@ -32,12 +26,6 @@
 			proj_calculator_link_1: 'web',
 			proj_calculator_link_2: 'source',
 			proj_calculator_position: 'Salary Calculator & Comparator',
-
-			proj_explorer_description: 'Ruby library that visualizes runtime data and associations as an image.',
-			proj_explorer_details_1: 'Makes Rails debugging easier (console output and GraphViz image),',
-			proj_explorer_link_1: 'source',
-			proj_explorer_position: 'Active Explorer Gem',
-			proj_explorer_title: 'Open source',
 		},
 	})
 </script>
@@ -85,30 +73,6 @@
 				<li class="badge badge-highlight inline">TypeScript</li>
 				<li class="badge inline">Tailwind</li>
 				<li class="badge inline">Vercel</li>
-			</ul>
-		</div>
-	</Project>
-</section>
-
-<section>
-	<Project position={t('proj_explorer_position')} period="2016" title={t('proj_explorer_title')}>
-		<ul>
-			<li>{t('proj_explorer_description')}</li>
-
-			<li>
-				{t('proj_explorer_details_1')}
-				<a href="https://github.com/exmaxx/active_explorer">{t('proj_explorer_link_1')}</a>
-			</li>
-		</ul>
-
-		<div class="mt-2 ml-5">
-			Tech:
-
-			<ul class="inline list-none pl-0 leading-5">
-				<li class="badge badge-highlight inline">Ruby</li>
-				<li class="badge badge-highlight inline">Ruby on Rails</li>
-				<li class="badge inline">Active Record</li>
-				<li class="badge inline">GraphViz</li>
 			</ul>
 		</div>
 	</Project>

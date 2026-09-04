@@ -24,7 +24,6 @@
 			experience_work_title_selection: 'Praxe (Výběr)',
 			experience_work_title_other: 'Praxe (Další)',
 			experience_projects_title: 'Osobní projekty',
-			experience_projects_title_other: 'Osobní projekty (Další)',
 			who_am_i: 'Kdo jsem',
 		},
 		en: {
@@ -35,7 +34,6 @@
 			experience_work_title_selection: 'Work Experience (Highlight)',
 			experience_work_title_other: 'Work Experience (Additional)',
 			experience_projects_title: 'Personal Projects',
-			experience_projects_title_other: 'Personal Projects (Additional)',
 			who_am_i: 'Who I am',
 		},
 	})
@@ -90,7 +88,7 @@
 
 			<ExperienceWorkOther />
 
-			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title_other')}</h2>
+			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title')}</h2>
 
 			<ExperienceProjectsOther />
 		</section>

@@ -4,17 +4,21 @@
 	const t = useI18n({
 		cs: {
 			skills: 'Dovednosti',
+			web: 'Web',
 			years: 'roky',
 		},
 		en: {
 			skills: 'Skills',
+			web: 'Web',
 			years: 'years',
 		},
 	})
 </script>
 
-<section>
-	<ul class=" flex flex-col gap-1 pl-0">
+<section class="flex flex-col gap-1">
+	<h3 class="mt-0">{t('web')}</h3>
+
+	<ul class="flex flex-col gap-1 pl-0">
 		<li class="flex items-center gap-2 text-nowrap">
 			<picture class="w-4.5">
 				<img src="vue-logo.svg" alt="vue-logo" />

@@ -216,6 +216,7 @@
 				<li class="badge inline">SAP SD</li>
 				<li class="badge inline">SAP MM</li>
 				<li class="badge inline">Web Dynpro</li>
+				<li class="badge inline">eCATT</li>
 			</ul>
 		</div>
 	</Project>
@@ -245,7 +246,7 @@
 				<li class="badge inline">SAP Workflow</li>
 				<li class="badge inline">SAP SD</li>
 				<li class="badge inline">SAP MM</li>
-				<li class="badge inline">SAP FI</li>
+				<li class="badge inline">ALV</li>
 			</ul>
 		</div>
 	</Project>
