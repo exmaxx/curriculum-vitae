@@ -57,24 +57,30 @@
 	<!-- Page #1 -->
 
 	<PaperPage class="a4:grid a4:grid-cols-[auto_380px]">
-		<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
-			<h2>{t('summary')}</h2>
+		<div class="flex flex-col gap-4">
+			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
+				<h2>{t('summary')}</h2>
 
-			<Lead />
+				<Lead />
+			</section>
 
-			<h2 class="mt-1">{t('skills')}</h2>
+			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
+				<h2>{t('skills')}</h2>
 
-			<SkillsHighlight />
-			<SkillsTech />
+				<SkillsHighlight />
+				<SkillsTech />
+			</section>
 
-			<h2 class="mt-1">{t('who_am_i')}</h2>
+			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
+				<h2>{t('who_am_i')}</h2>
 
-			<Personality />
-			<Interests />
-			<Languages />
-			<Education />
-			<Profiles />
-		</section>
+				<Personality />
+				<Interests />
+				<Languages />
+				<Education />
+				<Profiles />
+			</section>
+		</div>
 
 		<section>
 			<h2 class="mt-1 bg-zinc-100">{t('experience_work_title_selection')}</h2>
