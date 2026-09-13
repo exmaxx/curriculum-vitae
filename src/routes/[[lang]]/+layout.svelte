@@ -20,8 +20,7 @@
 
 <div
 	class="a4:grid-areas-main a4:grid a4:grid-cols-[1fr_auto_1fr]
-	 a4:grid-rows-[1fr_auto_1fr] min-h-dvh items-center bg-zinc-400 py-1
-	  print:bg-white"
+	 a4:grid-rows-[1fr_auto_1fr] min-h-dvh items-center py-1"
 >
 	<div
 		class="[grid-area:main] mx-auto w-fit origin-top not-print:mt-12 xl:scale-150

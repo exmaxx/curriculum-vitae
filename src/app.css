@@ -12,6 +12,10 @@
 }
 
 @layer base {
+	html {
+		@apply bg-zinc-400 print:bg-white;
+	}
+
 	h1,
 	h2,
 	h3 {
