@@ -1,21 +1,16 @@
 <script lang="ts">
-	import useI18n from '$lib/composables/useI18n.svelte.js'
+	import useTitle from '$lib/composables/useTitle.svelte.js'
+	import { profile } from '$lib/profiles/index.js'
 
-	const t = useI18n({
-		cs: {
-			my_profiles: 'Mé profily',
-		},
-		en: {
-			my_profiles: 'Tech profiles',
-		},
-	})
+	const getTitle = useTitle()
 </script>
 
 <section>
-	<h3 class="mt-0">{t('my_profiles')}</h3>
+	<h3 class="mt-0">{getTitle('techProfiles')}</h3>
 
 	<ul class="flex list-none gap-2 text-nowrap">
-		<li><a href="https://stackoverflow.com/users/2016383/exmaxx">StackOverflow</a></li>
-		<li><a href="https://github.com/exmaxx">GitHub</a></li>
+		{#each profile.who.profiles as link, index (index)}
+			<li><a href={link.href}>{link.label}</a></li>
+		{/each}
 	</ul>
 </section>

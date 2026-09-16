@@ -1,24 +1,20 @@
 <script lang="ts">
-	import useI18n from '$lib/composables/useI18n.svelte.js'
+	import { page } from '$app/state'
+	import useTitle from '$lib/composables/useTitle.svelte.js'
+	import { DEFAULT_LANG } from '$lib/constants.js'
+	import type { Lang } from '$lib/langs.js'
+	import { profile } from '$lib/profiles/index.js'
 
-	const t = useI18n({
-		cs: {
-			lang_cs: 'Český: rodný',
-			lang_en: 'Anglický: plynně (C1)',
-			languages: 'Jazyky',
-		},
-		en: {
-			lang_cs: 'Czech: native',
-			lang_en: 'English: fluent (C1)',
-			languages: 'Languages',
-		},
-	})
+	const lang = $derived((page.params.lang || DEFAULT_LANG) as Lang)
+	const getTitle = useTitle()
 </script>
 
 <section>
-	<h3 class="mt-0">{t('languages')}</h3>
+	<h3 class="mt-0">{getTitle('languages')}</h3>
+
 	<ul>
-		<li>{t('lang_en')}</li>
-		<li>{t('lang_cs')}</li>
+		{#each profile.who.languages as language, index (index)}
+			<li>{language[lang]}</li>
+		{/each}
 	</ul>
 </section>

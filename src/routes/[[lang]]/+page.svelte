@@ -1,5 +1,5 @@
 <script lang="ts">
-	import useI18n from '$lib/composables/useI18n.svelte.js'
+	import useTitle from '$lib/composables/useTitle.svelte.js'
 	import Title from './(components)/Title.svelte'
 	import SkillsHighlight from './(components)/SkillsHighlight.svelte'
 	import ExperienceWork from './(components)/ExperienceWork.svelte'
@@ -16,30 +16,7 @@
 	import Interests from './(components)/Interests.svelte'
 	import PaperPage from './(components)/PaperPage.svelte'
 
-	const t = useI18n({
-		cs: {
-			learning: 'učím se',
-			skills: 'Dovednosti',
-			summary: 'Profil',
-			years: 'roky',
-			experience_work_title_selection: 'Praxe (Výběr)',
-			experience_work_title_other: 'Praxe (Další)',
-			experience_projects_title: 'Osobní projekty',
-			experience_projects_title_other: 'Osobní projekty (Další)',
-			who_am_i: 'Kdo jsem',
-		},
-		en: {
-			learning: 'learning',
-			skills: 'Skills',
-			summary: 'Summary',
-			years: 'years',
-			experience_work_title_selection: 'Work Experience (Highlight)',
-			experience_work_title_other: 'Work Experience (Additional)',
-			experience_projects_title: 'Personal Projects',
-			experience_projects_title_other: 'Personal Projects (Additional)',
-			who_am_i: 'Who I am',
-		},
-	})
+	const getTitle = useTitle()
 </script>
 
 <article class="a4:px-11 px-6 py-8 print:shadow-none">
@@ -59,20 +36,20 @@
 	<PaperPage class="a4:grid a4:grid-cols-[auto_380px]">
 		<div class="flex flex-col gap-4">
 			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
-				<h2>{t('summary')}</h2>
+				<h2>{getTitle('summary')}</h2>
 
 				<Lead />
 			</section>
 
 			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
-				<h2>{t('skills')}</h2>
+				<h2>{getTitle('skills')}</h2>
 
 				<SkillsHighlight />
 				<SkillsTech />
 			</section>
 
 			<section class="border-secondary bg-accent flex flex-col gap-3 rounded-xl px-5 pb-4">
-				<h2>{t('who_am_i')}</h2>
+				<h2>{getTitle('whoIAm')}</h2>
 
 				<Personality />
 				<Interests />
@@ -83,11 +60,11 @@
 		</div>
 
 		<section>
-			<h2 class="mt-1 bg-zinc-100">{t('experience_work_title_selection')}</h2>
+			<h2 class="mt-1 bg-zinc-100">{getTitle('experienceWorkSelection')}</h2>
 
 			<ExperienceWork />
 
-			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title')}</h2>
+			<h2 class="mt-6 bg-zinc-100">{getTitle('experienceProjects')}</h2>
 
 			<ExperienceProjects />
 		</section>
@@ -97,11 +74,11 @@
 
 	<PaperPage>
 		<section>
-			<h2 class="mt-1 bg-zinc-100">{t('experience_work_title_other')}</h2>
+			<h2 class="mt-1 bg-zinc-100">{getTitle('experienceWorkOther')}</h2>
 
 			<ExperienceWorkOther />
 
-			<h2 class="mt-6 bg-zinc-100">{t('experience_projects_title_other')}</h2>
+			<h2 class="mt-6 bg-zinc-100">{getTitle('experienceProjectsOther')}</h2>
 
 			<ExperienceProjectsOther />
 		</section>
