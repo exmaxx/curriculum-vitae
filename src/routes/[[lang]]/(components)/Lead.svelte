@@ -21,9 +21,9 @@
 <div>
 	<p>
 		{#if lang === Langs.cs}
-			Zkušený software engineer (<strong>15+ let, 10 let frontend</strong>).
+			Zkušený frontend engineer (<strong>15+ let, 10 let frontend</strong>).
 		{:else}
-			Experienced software engineer (<strong>10 years in frontend, 15+ total</strong>).
+			Experienced frontend engineer (<strong>10 years in frontend, 15+ total</strong>).
 		{/if}
 	</p>
 
@@ -40,14 +40,6 @@
 			<strong>Cross-team</strong> spolupracovník, schopný <strong>vést tým</strong>.
 		{:else}
 			<strong>Cross-team</strong> collaborator, able to <strong>lead a team</strong>.
-		{/if}
-	</p>
-
-	<p>
-		{#if lang === Langs.cs}
-			Odpovídá za doručení <strong>od požadavků až do produkce</strong> a dál.
-		{:else}
-			Owns delivery <strong>from requirements to production</strong> and beyond.
 		{/if}
 	</p>
 

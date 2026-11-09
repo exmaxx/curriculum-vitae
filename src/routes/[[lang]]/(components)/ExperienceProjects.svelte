@@ -13,7 +13,7 @@
 			proj_finance_position: 'Personal Finance Tracking App',
 			proj_finance_details_1: 'Processing of bank email notifications and CSV files',
 			proj_finance_details_2: 'Rich responsive UI (shadcn), reports, forecasts',
-			proj_finance_details_3: 'AI-based refund matching (Mistral AI)',
+			proj_finance_details_3: 'vibe coded, AI-based refund matching (Mistral AI)',
 		},
 	})
 </script>
