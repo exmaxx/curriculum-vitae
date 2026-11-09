@@ -45,9 +45,9 @@
 
 	<p>
 		{#if lang === Langs.cs}
-			Nadšenec pro <strong>AI-assisted development</strong>.
+			Nadšenec pro <strong>"AI-assisted" a agentní development</strong>.
 		{:else}
-			Enthusiast for <strong>AI-assisted development</strong>.
+			Enthusiast for <strong>AI-assisted and agentic development</strong>.
 		{/if}
 	</p>
 </div>

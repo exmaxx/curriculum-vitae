@@ -4,16 +4,16 @@
 
 	const t = useI18n({
 		cs: {
-			proj_finance_position: 'Aplikace pro sledování osobních financí',
+			proj_finance_position: 'Aplikace pro sledování osobních financí (vibe-coded)',
 			proj_finance_details_1: 'Zpracování bankovních e-mailových notifikací a CSV souborů',
 			proj_finance_details_2: 'Bohatý responzivní UI (shadcn), reporty, prognózy',
 			proj_finance_details_3: 'AI párování refundací (Mistral AI)',
 		},
 		en: {
-			proj_finance_position: 'Personal Finance Tracking App',
+			proj_finance_position: 'Personal Finance Tracking App (vibe-coded)',
 			proj_finance_details_1: 'Processing of bank email notifications and CSV files',
 			proj_finance_details_2: 'Rich responsive UI (shadcn), reports, forecasts',
-			proj_finance_details_3: 'vibe coded, AI-based refund matching (Mistral AI)',
+			proj_finance_details_3: 'AI-based refund matching (Mistral AI)',
 		},
 	})
 </script>
