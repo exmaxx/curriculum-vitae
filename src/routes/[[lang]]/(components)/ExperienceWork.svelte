@@ -102,8 +102,8 @@
 				<li class="badge badge-highlight inline">Vue</li>
 				<li class="badge badge-highlight inline">React</li>
 				<li class="badge badge-highlight inline">TypeScript</li>
-				<li class="badge inline">React Query</li>
 				<li class="badge inline">React Router</li>
+				<li class="badge inline">RTK Query</li>
 				<li class="badge inline">Tailwind</li>
 				<li class="badge inline">REST API</li>
 				<li class="badge inline">Node.js</li>
